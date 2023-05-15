@@ -446,17 +446,14 @@ button:focus,
   }
 }
 
-@media all and (max-width: 480px) {
-}
+@media all and (max-width: 480px) {}
 
-@media all and (max-width: 768px) {
-}
+@media all and (max-width: 768px) {}
 
-@media all and (max-width: 992px) {
-}
+@media all and (max-width: 992px) {}
 
-@media all and (max-width: 1200px) {
-}
+@media all and (max-width: 1200px) {}
+
 /* KEYFRAMES */
 
 @-webkit-keyframes cloud-move-reverse {
@@ -465,9 +462,11 @@ button:focus,
     -webkit-transform: translate(446px, 48px);
     transform: translate(446px, 48px);
   }
+
   50% {
     fill: #56cde2;
   }
+
   100% {
     fill: #337986;
     -webkit-transform: translate(100px, 48px);
@@ -481,9 +480,11 @@ button:focus,
     -webkit-transform: translate(446px, 48px);
     transform: translate(446px, 48px);
   }
+
   50% {
     fill: #56cde2;
   }
+
   100% {
     fill: #337986;
     -webkit-transform: translate(100px, 48px);
@@ -499,6 +500,7 @@ button:focus,
   50% {
     fill: #fcffad;
   }
+
   100% {
     fill: #f76414;
   }
@@ -512,6 +514,7 @@ button:focus,
   50% {
     fill: #fcffad;
   }
+
   100% {
     fill: #f76414;
   }

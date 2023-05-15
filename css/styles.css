@@ -349,17 +349,14 @@ button:focus,
   }
 }
 
-@media all and (max-width: 480px) {
-}
+@media all and (max-width: 480px) {}
 
-@media all and (max-width: 768px) {
-}
+@media all and (max-width: 768px) {}
 
-@media all and (max-width: 992px) {
-}
+@media all and (max-width: 992px) {}
 
-@media all and (max-width: 1200px) {
-}
+@media all and (max-width: 1200px) {}
+
 /* KEYFRAMES */
 
 @keyframes cloud-move-reverse {
@@ -367,9 +364,11 @@ button:focus,
     fill: var(--box-background);
     transform: translate(446px, 48px);
   }
+
   50% {
     fill: var(--cloud-color);
   }
+
   100% {
     fill: var(--primary-color);
     transform: translate(100px, 48px);
@@ -384,6 +383,7 @@ button:focus,
   50% {
     fill: var(--sun-second);
   }
+
   100% {
     fill: var(--sun-third);
   }
