@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/favicon-32x32.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.production.css" />
+    <title>SK Portfolio</title>
+  </head>
+  <body>
+    <!--header section-->
+    <header class="page-header">
+      <img
+        class="header-img"
+        src="img/sklogo2.svg"
+        alt="S Keller personal logo of name in text with leaf branch"
+      />
+      <nav class="page-header__item">
+        <!--ARIA accessibility with roles-->
+        <ul role="menubar" class="navigation-list">
+          <li role="presentation">
+            <a href="index.html" role="menuitem" class="navigation-list__item"
+              >Home</a
+            >
+          </li>
+          <li role="presentation">
+            <a href="about.html" role="menuitem" class="navigation-list__item"
+              >About me</a
+            >
+          </li>
+          <li role="presentation">
+            <a
+              href="contact.html"
+              role="menuitem"
+              class="navigation-list__item navigation-list__item--active"
+              >Contact</a
+            >
+          </li>
+          <li role="presentation">
+            <a href="work.html" role="menuitem" class="navigation-list__item"
+              >Work</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!--main section-->
+    <main class="main-contact">
+      <h1>Contact</h1>
+      <div class="main__contact--items">
+        <div class="main__contact--item">
+          S Keller<br />
+          Esswurmstr. 3<br />
+          12345 Munich<br />
+          Germany<br />
+          <br />
+          Tel:
+          <a href="tel:+491234555666" aria-label="Call me at +49 1234 555 666"
+            >+49 1234 555 666</a
+          >
+          <br />
+          Skype: <a href="skype:sarah29.84">sarah29.84</a>
+          <br />
+          Email
+          <a
+            href="mailto:sarah29.84@gmail.com?cc=smaugkeller@gmail.com&subject=Portfolio"
+            >sarah29.84(at)gmail.com</a
+          >
+          <p>Alternatively, leave me a message and your email.</p>
+        </div>
+
+        <!--contact form-->
+        <div class="main__contact--item">
+          <form action="" method="post" id="contact-form">
+            <label class="contact-label" for="contact-email">E-mail:</label>
+            <input type="email" id="contact-email" required />
+            <br />
+            <br />
+            <label class="contact-label" for="contact-tel">Telephone:</label>
+            <input
+              type="tel"
+              id="contact-tel"
+              pattern="\d{3}[\-]\d{3}[\-]\d{4}"
+            />
+            <br />
+            <br />
+            <label class="contact-label" for="contact-msg">Message:</label>
+            <textarea maxlength="240" id="contact-msg" required> </textarea>
+            <br />
+            <br />
+            <!--the screenreader will read the value of the button-->
+            <input
+              type="submit"
+              id="contact-submit"
+              name="msg"
+              value="Send message"
+            />
+            <!--<aria-label="submit form"/> makes the screen reader read it twice, redundant-->
+            <!--is the name attribute necessary here? is a class necessary for the CSS?-->
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <!--footer with clear alt for the screenreader-->
+    <footer class="page-footer">
+      <a href="mailto:sarah29.84@gmail.com?cc=smaugkeller@gmail.com"
+        >Contact me
+      </a>
+      <p>Find me on</p>
+      <div class="social-media">
+        <img src="img/github_icon.svg" alt="Github icon" />
+        <img src="img/twitter_icon.svg" alt="Twitter icon" />
+        <img src="img/linkedin_icon.svg" alt="LinkedIn icon" />
+      </div>
+    </footer>
+    <!--js source for accessibility checker-->
+    <script src="js/tota11y.min.js"></script>
+  </body>
+</html>
