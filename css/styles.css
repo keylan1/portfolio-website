@@ -247,6 +247,11 @@ button:focus,
   opacity: 0.6;
 }
 
+.contact-p {
+  font-style: italic;
+  margin-top: 7px;
+}
+
 #contact-msg,
 #contact-email,
 #contact-tel {
