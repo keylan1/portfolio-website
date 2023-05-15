@@ -147,6 +147,10 @@ footer {
   justify-content: center;
 }
 
+.main__about--text {
+  margin-top: 40px;
+}
+
 svg {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -167,7 +171,7 @@ svg {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 90px 90px;
+  margin: 40px 90px;
 }
 
 .main__contact--item {
@@ -193,6 +197,7 @@ table {
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 15px;
     margin: 30px;
+    margin-top: 40px;
   }
 
   .grid__item {
