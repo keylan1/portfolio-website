@@ -252,7 +252,7 @@ table {
   }
 
   .grid__item {
-    background-color: #f2f6f8;
+    background-color: #f5f5f5;
     width: auto;
     min-height: auto;
     margin: 0;
@@ -461,7 +461,7 @@ button:focus,
 
 @-webkit-keyframes cloud-move-reverse {
   0% {
-    fill: #f2f6f8;
+    fill: undefined;
     -webkit-transform: translate(446px, 48px);
     transform: translate(446px, 48px);
   }
@@ -477,7 +477,7 @@ button:focus,
 
 @keyframes cloud-move-reverse {
   0% {
-    fill: #f2f6f8;
+    fill: undefined;
     -webkit-transform: translate(446px, 48px);
     transform: translate(446px, 48px);
   }
