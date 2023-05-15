@@ -315,6 +315,13 @@ button:focus,
   opacity: 0.6;
 }
 
+#contact-msg,
+#contact-email,
+#contact-tel {
+  height: 35px;
+  width: 100%;
+}
+
 #contact-submit {
   padding: 5px;
   -webkit-box-shadow: inset;
