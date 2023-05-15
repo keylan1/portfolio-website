@@ -252,6 +252,7 @@ button:focus,
 #contact-tel {
   height: 35px;
   width: 100%;
+  resize: none;
 }
 
 #contact-submit {
@@ -353,6 +354,19 @@ button:focus,
     margin: 0 auto;
     max-height: 250px;
     max-width: 250px;
+  }
+
+  .main__contact--item {
+    padding: 10px;
+  }
+
+  form {
+    width: max-content;
+  }
+
+  .contact-p {
+    margin-top: 10px;
+    font-style: italic;
   }
 }
 
