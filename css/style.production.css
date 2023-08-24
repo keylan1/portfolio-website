@@ -5,24 +5,6 @@
 * Browsers: last 4 version
 */
 
-:root {
-  --primary-color: #337986;
-  --visited-color: #c96d7c;
-  --background-color: #fcfcfc;
-  --text-color: #4d4c4f;
-  --active-color: #95c5ce;
-  --button-text: white;
-  --page-border: #f5f5f5;
-  --cloud-color: #56cde2;
-  --sun-first: #edc655;
-  --sun-second: #fcffad;
-  --sun-third: #f76414;
-  --font-family: tajawal, sans-serif;
-  --font-weight: 700;
-  --line-height: 1.5;
-  --docfont-size: 16px;
-}
-
 /* GENERAL RULES FOR DOC */
 *,
 *:after,
@@ -51,11 +33,11 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: var(--background-color);
-  color: var(--text-color);
-  font-size: var(--docfont-size);
-  font-family: var(--font-family);
-  line-height: var(--line-height);
+  background-color: #fcfcfc;
+  color: #4d4c4f;
+  font-size: 16px;
+  font-family: tajawal, sans-serif;
+  line-height: 1.5;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -64,21 +46,21 @@ body {
 
 h1 {
   font-size: 30px;
-  font-weight: var(--font-weight);
-  line-height: var(--line-height);
+  font-weight: 700;
+  line-height: 1.5;
   text-align: center;
 }
 
 h2 {
   font-size: 24px;
-  font-weight: var(--font-weight);
-  line-height: var(--line-height);
+  font-weight: 700;
+  line-height: 1.5;
 }
 
 h3 {
   font-size: 18px;
-  font-weight: var(--font-weight);
-  line-height: var(--line-height);
+  font-weight: 700;
+  line-height: 1.5;
 }
 
 /* HEADER RULES */
@@ -89,8 +71,8 @@ h3 {
   display: flex;
   width: 100%;
   padding: 20px;
-  border-bottom: 3px solid var(--page-border);
-  background-color: var(--background-color);
+  border-bottom: 3px solid #f5f5f5;
+  background-color: #fcfcfc;
 }
 
 .page-header__item {
@@ -270,31 +252,33 @@ table {
   }
 
   .grid__item {
-    background-color: var(--page-border);
+    background-color: #f5f5f5;
     width: auto;
     min-height: auto;
     margin: 0;
   }
 
   .event-img {
+    display: -ms-grid;
     display: grid;
     place-items: center;
     /*margin: auto;*/
-    background-color: var(--page-border);
+    background-color: #f5f5f5;
     max-width: 100%;
     max-height: 100%;
     margin: auto;
+    -o-object-fit: cover;
     object-fit: cover;
   }
 }
 
 /* BUTTONS AND LINKS */
 a {
-  color: var(--primary-color);
+  color: #337986;
 }
 
 a:visited {
-  color: var(--visited-color);
+  color: #c96d7c;
 }
 
 a:hover,
@@ -303,17 +287,31 @@ a:focus {
 }
 
 a:active {
-  color: var(--active-color);
+  color: #95c5ce;
 }
 
-button,
+button {
+  border: none;
+  background-color: #337986;
+  font-family: inherit;
+  font-size: 16px;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  -webkit-transition: opacity 0.4s;
+  -o-transition: opacity 0.4s;
+  transition: opacity 0.4s;
+}
+
 .button {
   border: none;
-  background-color: var(--primary-color);
+  background-color: #337986;
   font-family: inherit;
-  font-size: var(--docfont-size);
+  font-size: 16px;
   text-decoration: none;
-  color: var(--button-text);
+  color: white;
   border-radius: 5px;
   padding: 10px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
@@ -347,8 +345,8 @@ button:focus,
   padding: 5px;
   -webkit-box-shadow: inset;
   box-shadow: inset;
-  background-color: var(--primary-color);
-  color: var(--button-text);
+  background-color: #337986;
+  color: white;
   border-radius: 5px;
 }
 
@@ -368,8 +366,8 @@ button:focus,
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: var(--page-border);
-  line-height: var(--line-height);
+  background-color: #f5f5f5;
+  line-height: 1.5;
   padding: 10px;
 }
 
@@ -501,17 +499,17 @@ button:focus,
 
 @-webkit-keyframes cloud-move-reverse {
   0% {
-    fill: var(--box-background);
+    fill: undefined;
     -webkit-transform: translate(446px, 48px);
     transform: translate(446px, 48px);
   }
 
   50% {
-    fill: var(--cloud-color);
+    fill: #56cde2;
   }
 
   100% {
-    fill: var(--primary-color);
+    fill: #337986;
     -webkit-transform: translate(100px, 48px);
     transform: translate(100px, 48px);
   }
@@ -519,17 +517,17 @@ button:focus,
 
 @keyframes cloud-move-reverse {
   0% {
-    fill: var(--box-background);
+    fill: undefined;
     -webkit-transform: translate(446px, 48px);
     transform: translate(446px, 48px);
   }
 
   50% {
-    fill: var(--cloud-color);
+    fill: #56cde2;
   }
 
   100% {
-    fill: var(--primary-color);
+    fill: #337986;
     -webkit-transform: translate(100px, 48px);
     transform: translate(100px, 48px);
   }
@@ -537,29 +535,29 @@ button:focus,
 
 @-webkit-keyframes sun-animation {
   0% {
-    fill: var(--sun-first);
+    fill: #edc655;
   }
 
   50% {
-    fill: var(--sun-second);
+    fill: #fcffad;
   }
 
   100% {
-    fill: var(--sun-third);
+    fill: #f76414;
   }
 }
 
 @keyframes sun-animation {
   0% {
-    fill: var(--sun-first);
+    fill: #edc655;
   }
 
   50% {
-    fill: var(--sun-second);
+    fill: #fcffad;
   }
 
   100% {
-    fill: var(--sun-third);
+    fill: #f76414;
   }
 }
 
