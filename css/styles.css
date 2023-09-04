@@ -222,8 +222,8 @@ table {
     place-items: center;
     /*margin: auto;*/
     background-color: var(--page-border);
-    /*max-width: 100%;
-    max-height: 100%;*/
+    max-width: 100%;
+    max-height: 45%;
     margin: auto;
     object-fit: cover;
   }
