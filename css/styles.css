@@ -216,6 +216,17 @@ table {
     margin: auto;
     object-fit: cover;
   }
+
+  .chirp-img {
+    display: grid;
+    place-items: center;
+    /*margin: auto;*/
+    background-color: var(--page-border);
+    max-width: 100%;
+    max-height: 45%;
+    margin: auto;
+    object-fit: cover;
+  }
 }
 
 /* BUTTONS AND LINKS */
