@@ -227,6 +227,50 @@ table {
     margin: auto;
     object-fit: cover;
   }
+
+  .mFlix-angular-img {
+    display: grid;
+    place-items: center;
+    /*margin: auto;*/
+    background-color: var(--page-border);
+    max-width: 100%;
+    max-height: 45%;
+    margin: auto;
+    object-fit: cover;
+  }
+
+  .mFlix-react-img {
+    display: grid;
+    place-items: center;
+    /*margin: auto;*/
+    background-color: var(--page-border);
+    max-width: 100%;
+    max-height: 45%;
+    margin: auto;
+    object-fit: cover;
+  }
+
+  .flix-api-img {
+    display: grid;
+    place-items: center;
+    /*margin: auto;*/
+    background-color: var(--page-border);
+    max-width: 100%;
+    max-height: 45%;
+    margin: auto;
+    object-fit: cover;
+  }
+
+  .pokedex-img {
+    display: grid;
+    place-items: center;
+    /*margin: auto;*/
+    background-color: var(--page-border);
+    max-width: 100%;
+    max-height: 45%;
+    margin: auto;
+    object-fit: cover;
+  }
 }
 
 /* BUTTONS AND LINKS */

@@ -283,6 +283,58 @@ table {
     -o-object-fit: cover;
     object-fit: cover;
   }
+
+  .mFlix-angular-img {
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+    /*margin: auto;*/
+    background-color: #f5f5f5;
+    max-width: 100%;
+    max-height: 45%;
+    margin: auto;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+
+  .mFlix-react-img {
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+    /*margin: auto;*/
+    background-color: #f5f5f5;
+    max-width: 100%;
+    max-height: 45%;
+    margin: auto;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+
+  .flix-api-img {
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+    /*margin: auto;*/
+    background-color: #f5f5f5;
+    max-width: 100%;
+    max-height: 45%;
+    margin: auto;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+
+  .pokedex-img {
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+    /*margin: auto;*/
+    background-color: #f5f5f5;
+    max-width: 100%;
+    max-height: 45%;
+    margin: auto;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
 }
 
 /* BUTTONS AND LINKS */

@@ -56,6 +56,19 @@
       </div>
       <!--CONTACT FORM-->
       <div class="main__contact--item">
+        <form action="https://formie.io/form/417c1b47-8515-41ae-b197-ad6dcc4e86b3" method="POST">
+          <!-- Optional: Redirect to your success page -->
+          <input name="_redirect" type="hidden" value="https://yoursite/success">
+          <label class="contact-label" for="contact-email">E-mail:</label>
+          <input name="email" type="email" id="contact-email" required>
+          <br />
+          <br />
+          <label class="contact-label" for="contact-msg">Message:</label>
+          <textarea maxlength="240" id="contact-msg" required name="query"></textarea>
+
+          <button>Submit</button>
+        </form>
+        <!--
         <form action="#" method="post" id="contact-form">
           <label class="contact-label" for="contact-email">E-mail:</label>
           <input type="email" id="contact-email" required />
@@ -70,7 +83,7 @@
           <br />
           <br />
           <input type="submit" id="contact-submit" name="msg" value="Send message" />
-        </form>
+        </form>-->
       </div>
     </div>
   </main>
@@ -80,9 +93,13 @@
     </a>
     <p>Find me on</p>
     <div class="social-media">
-      <img src="img/github_icon.svg" alt="Github icon" />
-      <img src="img/twitter_icon.svg" alt="Twitter icon" />
-      <img src="img/linkedin_icon.svg" alt="LinkedIn icon" />
+      <a href="https://github.com/keylan1">
+        <img src="img/github_icon.svg" alt="Github icon" />
+      </a>
+      <!--<img src="img/twitter_icon.svg" alt="Twitter icon" />-->
+      <a href="https://www.linkedin.com/in/sarah-keller-77b59525/">
+        <img src="img/linkedin_icon.svg" alt="LinkedIn icon" />
+      </a>
     </div>
   </footer>
   <!--js source for accessibility checker-->
