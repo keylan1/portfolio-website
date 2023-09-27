@@ -436,7 +436,30 @@ button:focus,
 
 /* RESPONSIVENESS */
 /* GRID */
-@media all and (max-width: 480px) {
+
+@media all and (max-width: 493px) {
+  .navigation-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .navigation-list__item {
+    font-size: 13px;
+  }
+}
+
+@media all and (min-width: 321px) and (max-width: 493px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+@media all and (max-width: 493px) {
   .grid {
     grid-template-columns: 1fr;
     grid-gap: 25px;
@@ -466,6 +489,17 @@ button:focus,
   .main__contact--items {
     display: flex;
     flex-direction: column;
+  }
+}
+
+@media all and (min-width: 494px) and (max-width: 541px) {
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 15px;
+  }
+
+  .navigation-list__item {
+    font-size: 14px;
   }
 }
 
@@ -501,7 +535,12 @@ button:focus,
   }
 }
 
-@media all and (min-width: 481px) and (max-width: 539px) {
+@media all and (min-width: 481px) and (max-width: 541px) {
+
+  .navigation-list__item {
+    font-size: 16px;
+  }
+
   .grid {
     grid-template-columns: 1fr;
     grid-gap: 15px;
@@ -531,9 +570,13 @@ button:focus,
     max-height: 350px;
     max-width: 350px;
   }
+
+
 }
 
 @media all and (max-width: 768px) {
+
+
   .page-header__item:first-child {
     flex-shrink: 1;
     flex-basis: auto;
@@ -542,6 +585,10 @@ button:focus,
   .grid__item:last-child {
     grid-column: auto / auto;
     grid-row: auto / auto;
+  }
+
+  .navigation-list--item {
+    margin-top: 16px;
   }
 
   .project-button {
@@ -565,11 +612,11 @@ button:focus,
 
 @media all and (min-width: 769px) and (max-width: 890px) {
   .navigation-list__item {
-    font-size: 15px;
+    font-size: 20px;
   }
 
   .navigation-list {
-    margin-top: 20px;
+    margin-top: 18px;
   }
 
   .grid {
@@ -577,6 +624,8 @@ button:focus,
     grid-gap: 20px;
   }
 }
+
+
 
 /* MAIN RESPONSIVENESS */
 /* PROFILE */
@@ -588,12 +637,12 @@ button:focus,
     max-width: 300px;
   }
 
-  .navigation-list__item {
-    font-size: 15px;
-  }
+  /* .navigation-list__item {
+    font-size: 16px;
+  }*/
 
   .navigation-list {
-    margin-top: 20px;
+    margin-top: 15px;
   }
 
   .header-img {
@@ -613,7 +662,7 @@ button:focus,
   }
 
   .navigation-list__item {
-    font-size: 13px;
+    font-size: 12px;
   }
 
   form {
