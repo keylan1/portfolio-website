@@ -156,14 +156,22 @@ footer {
   justify-content: center;
 }
 
-.main__about--text {
-  margin-top: 40px;
+.main__about--about {
+  display: flex;
+  flex-direction: column;
+  max-width: 60vw;
+  justify-content: center;
 }
 
-svg {
+.main__about--text {
+  margin-top: 40px;
+  margin-bottom: 25px;
+}
+
+/*svg {
   margin-top: 10px;
   margin-bottom: 10px;
-}
+}*/
 
 .main-work {
   display: flex;
@@ -203,7 +211,7 @@ table {
 @supports (display: grid) {
   .grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 35px;
     margin: 30px;
     margin-top: 40px;
@@ -224,8 +232,6 @@ table {
     flex-direction: column;
     position: relative;
   }
-
-
 
   .grid__item_p {
     padding-top: 20px;
@@ -263,7 +269,20 @@ table {
   }
 
   .event-img {
-    display: grid;
+    /*display: grid;*/
+    place-items: center;
+    /*margin: auto;*/
+    background-color: var(--page-border);
+    max-width: 100%;
+    max-height: 100%;
+    /*margin: auto;*/
+    object-fit: cover;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+
+  }
+
+  .chirp-img {
     place-items: center;
     /*margin: auto;*/
     background-color: var(--page-border);
@@ -276,18 +295,6 @@ table {
 
   }
 
-  .chirp-img {
-    display: grid;
-    place-items: center;
-    /*margin: auto;*/
-    background-color: var(--page-border);
-    max-width: 100%;
-    max-height: 100%;
-    margin: auto;
-    object-fit: cover;
-
-  }
-
   .mFlix-angular-img {
     display: grid;
     place-items: center;
@@ -297,6 +304,8 @@ table {
     max-height: 100%;
     margin: auto;
     object-fit: cover;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
   }
 
   .mFlix-react-img {
@@ -308,6 +317,8 @@ table {
     max-height: 100%;
     margin: auto;
     object-fit: cover;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
   }
 
   .flix-api-img {
@@ -319,6 +330,8 @@ table {
     max-height: 100%;
     margin: auto;
     object-fit: cover;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
   }
 
   .pokedex-img {
@@ -330,6 +343,8 @@ table {
     max-height: 100%;
     margin: auto;
     object-fit: cover;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
   }
 }
 
@@ -456,7 +471,7 @@ button:focus,
 
 @media all and (min-width: 481px) and (max-width: 768px) {
   .grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-gap: 25px;
   }
 
@@ -486,6 +501,38 @@ button:focus,
   }
 }
 
+@media all and (min-width: 481px) and (max-width: 539px) {
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 15px;
+  }
+
+  .grid__item_p {
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 14px;
+  }
+
+  .project-button {
+    font-size: 14px;
+    padding: 8px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+
+  .profile__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .profile__portrait {
+    margin: 0 auto;
+    max-height: 350px;
+    max-width: 350px;
+  }
+}
+
 @media all and (max-width: 768px) {
   .page-header__item:first-child {
     flex-shrink: 1;
@@ -497,6 +544,10 @@ button:focus,
     grid-row: auto / auto;
   }
 
+  .project-button {
+    font-size: 12px;
+  }
+
   h1 {
     font-size: 22.5px;
   }
@@ -506,16 +557,31 @@ button:focus,
     text-align: justify;
   }
 
-  svg {
+  /*svg {
     width: 100%;
     height: auto;
+  }*/
+}
+
+@media all and (min-width: 769px) and (max-width: 890px) {
+  .navigation-list__item {
+    font-size: 15px;
+  }
+
+  .navigation-list {
+    margin-top: 20px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
   }
 }
 
 /* MAIN RESPONSIVENESS */
 /* PROFILE */
 
-@media all and (min-width: 320px) and (max-width: 480px) {
+@media all and (min-width: 320px) and (max-width: 538px) {
   .profile__portrait {
     margin: 0 auto;
     max-height: 300px;
@@ -523,11 +589,11 @@ button:focus,
   }
 
   .navigation-list__item {
-    font-size: 14px;
+    font-size: 15px;
   }
 
   .navigation-list {
-    margin-top: 30px;
+    margin-top: 20px;
   }
 
   .header-img {
@@ -544,6 +610,10 @@ button:focus,
 
   .main__contact--item {
     padding: 10px;
+  }
+
+  .navigation-list__item {
+    font-size: 13px;
   }
 
   form {
