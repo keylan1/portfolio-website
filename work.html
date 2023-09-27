@@ -6,10 +6,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" href="img/favicon-32x32.png" />
-  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800&display=swap"
-    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/normalize.css" />
-  <link rel="stylesheet" type="text/css" href="css/style.production.css" />
+  <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  <!--<link rel="stylesheet" type="text/css" href="css/style.production.css" />-->
   <title>SKeller Work</title>
 </head>
 
@@ -17,22 +21,24 @@
   <!--HEADER SECTION-->
   <header class="page-header">
     <!--LOGO-->
-    <img src="img/sklogo2.svg" alt="S Keller personal logo of name in text with leaf branch"
-      class="page-header__item" />
+    <a href="./index.html">
+      <img src="img/sklogo2.svg" alt="S Keller personal logo of name in text with leaf branch"
+        class="page-header__item" /></a>
     <nav class="page-header__item">
       <!--ARIA accessibility with roles-->
       <ul role="menubar" class="navigation-list">
         <li role="presentation">
-          <a href="index.html" role="menuitem">Home</a>
+          <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
         </li>
         <li role="presentation">
-          <a href="about.html" role="menuitem" class="navigation-list__item">About me</a>
+          <a href="about.html" role="menuitem" class="navigation-list__item">About</a>
         </li>
+        <li role="presentation">
+          <a href="work.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Projects</a>
         <li role="presentation">
           <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
         </li>
-        <li role="presentation">
-          <a href="work.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Work</a>
+
         </li>
       </ul>
     </nav>
@@ -44,75 +50,123 @@
       <div class="grid">
         <div class="grid__item">
           <!-- <h2>Event (Meet) App</h2> -->
-          <img src="./img/eventapppic.png" alt="event app image" class="event-img work-section-img">
-          <p>
-            The Event (Meet) App is a PWA crafted to streamline event discovery. Leveraging technologies like React.js,
-            AWS Lambda, and Google Calendar API, the app offers users an intuitive platform to effortlessly explore a
-            wide array of events. Google Authentication ensures a secure and personalized experience for users.
-            Implementing a Test-Driven Development (via Puppeteer and react testing library) approach fortified the
-            app's reliability and functionality.
-          </p>
-          <a href="https://github.com/keylan1/meet/tree/main">See project on GitHub</a>
-          <br>
-          <a href="https://keylan1.github.io/meet/">Hosted version</a>
+          <div class="grid__item-img">
+            <img src="./img/eventapppic.svg" alt="event app image" class="event-img work-section-img">
+          </div>
+          <div class="grid__item-text">
+            <p class="grid__item_p">
+              The Event (Meet) App is a PWA crafted to streamline event discovery. Leveraging technologies like
+              React.js,
+              AWS Lambda, and Google Calendar API, the app offers users an intuitive platform to effortlessly explore a
+              wide array of events. Google Authentication ensures a secure and personalized experience for users.
+              Implementing a Test-Driven Development (via Puppeteer and react testing library) approach fortified the
+              app's reliability and functionality.
+            </p>
+          </div>
+          <div class="button-container">
+            <a class="grid__item_a" href="https://github.com/keylan1/meet/tree/main"><button class="project-button">
+                Project on GitHub</button> </a>
+            <a class="grid__item_a" href="https://keylan1.github.io/meet/"><button class="project-button">Hosted
+                version</button></a>
+          </div>
         </div>
         <div class="grid__item">
-          <img src="./img/chirp.png" alt="chirp app image" class="chirp-img work-section-img">
-          <p>
-            Chirp is a mobile chat application for anonymous conversations. It was developed using React Native and Expo
-            for the
-            front-end, Firebase for real-time database and authentication, and Gifted Chat for a smooth chat interface.
-            Users can choose a username and chat background color, then engage in chat sessions with other users. The
-            app emphasizes privacy and simplicity, making it easy to start conversations without the need for account
-            creation.
-          </p>
-          <a href="https://github.com/keylan1/chirp">See project on GitHub</a>
+          <div class="grid__item-img">
+            <img src="./img/chirp.svg" alt="chirp app image" class="chirp-img work-section-img">
+          </div>
+          <div class="grid__item-text">
+            <p class="grid__item_p">
+              Chirp is a mobile chat application for anonymous conversations. It was developed using React Native and
+              Expo
+              for the
+              front-end, Firebase for real-time database and authentication, and Gifted Chat for a smooth chat
+              interface.
+              Users can choose a username and chat background color, then engage in chat sessions with other users. The
+              app emphasizes privacy and simplicity, making it easy to start conversations without the need for account
+              creation.
+            </p>
+          </div>
+          <div class="button-container">
+            <a class="grid__item_a" href="https://github.com/keylan1/chirp"><button class="project-button">Project on
+                GitHub</button></a>
+          </div>
         </div>
         <div class="grid__item">
-          <img src="./img/mFlix-angular.png" alt="angular mFlix app image" class="mFlix-angular-img work-section-img">
-          <p>
-            mFlix Angular App is a responsive movie app built with Angular. Users can explore movies, directors, and
-            genres, create profiles, and save favorite movies. The app features user-friendly login and registration,
-            Angular Material design, and thorough code comments. Hosted on GitHub Pages, it showcases Angular
-            development skills and offers an intuitive movie discovery experience.
-          </p>
-          <a href="https://github.com/keylan1/mFlixApp-Angular">See project on GitHub</a>
-          <br>
-          <a href="https://keylan1.github.io/mFlixApp-Angular">Hosted version</a>
+          <div class="grid__item-img">
+            <img src="./img/mFlix-angular.svg" alt="angular mFlix app image" class="mFlix-angular-img work-section-img">
+          </div>
+          <div class="grid__item-text">
+            <p class="grid__item_p">
+              mFlix Angular App is a responsive movie app built with Angular. Users can explore movies, directors, and
+              genres, create profiles, and save favorite movies. The app features user-friendly login and registration,
+              Angular Material design, and thorough code comments. Hosted on GitHub Pages, it showcases Angular
+              development skills and offers an intuitive movie discovery experience.
+            </p>
+          </div>
+          <div class="button-container">
+            <a class="grid__item_a" href="https://github.com/keylan1/mFlixApp-Angular"><button
+                class="project-button">Project on GitHub</button></a>
+            <a class="grid__item_a" href="https://keylan1.github.io/mFlixApp-Angular"><button
+                class="project-button">Hosted version</button></a>
+          </div>
         </div>
         <div class="grid__item">
-          <img src="./img/FlixApp-home.png" alt="mFlix React app image" class="mFlix-react-img work-section-img">
-          <p>
-            The mFlix React Client is a responsive movie app built with React and React Bootstrap. It empowers users to
-            explore, rate, and review their favorite movies. This client-side component of mFlixApp allows users to
-            browse an extensive movie collection, view detailed movie information, add movies to their favorites, and
-            manage their profiles. Its responsive design ensures an optimal viewing experience across various devices
-          </p>
-          <a href="https://github.com/keylan1/flixApp-client">See project on GitHub</a>
-          <br>
-          <a href="https://mflixapp.netlify.app">Hosted version</a>
+          <div class="grid__item-img">
+            <img src="./img/FlixApp-home.svg" alt="mFlix React app image" class="mFlix-react-img work-section-img">
+          </div>
+          <div class="grid__item-text">
+            <p class="grid__item_p">
+              The mFlix React Client is a responsive movie app built with React and React Bootstrap. It empowers users
+              to
+              explore, rate, and review their favorite movies. This client-side component of mFlixApp allows users to
+              browse an extensive movie collection, view detailed movie information, add movies to their favorites, and
+              manage their profiles. Its responsive design ensures an optimal viewing experience across various devices
+            </p>
+          </div>
+          <div class="button-container">
+            <a class="grid__item_a" href="https://github.com/keylan1/flixApp-client"><button
+                class="project-button">Project on GitHub</button></a>
+            <a class="grid__item_a" href="https://mflixapp.netlify.app"><button class="project-button">Hosted
+                version</button></a>
+          </div>
         </div>
         <div class="grid__item">
-          <img src="./img/flixApi.png" alt="flixApi image" class="flix-api-img work-section-img">
-          <br>
-          <p>
-            The mFlixApp Movie REST API uses Node.js, Express, and MongoDB. This API handles user
-            registration, authentication, and allows users to manage their favorite movies. It offers powerful search
-            capabilities for movies, directors, genres, and actors. The API is hosted on Heroku, highlighting backend
-            development skills.
-          </p>
-          <a href="https://github.com/keylan1/flixApp">See project on GitHub</a>
+          <div class="grid__item-img">
+            <img src="./img/flixApi.svg" alt="flixApi image" class="flix-api-img work-section-img">
+          </div>
+          <div class="grid__item-text">
+            <p class="grid__item_p">
+              The mFlixApp Movie REST API uses Node.js, Express, and MongoDB. This API handles user
+              registration, authentication, and allows users to manage their favorite movies. It offers powerful search
+              capabilities for movies, directors, genres, and actors. The API is hosted on Heroku, highlighting backend
+              development skills.
+            </p>
+          </div>
+          <div class="button-container">
+            <a class="grid__item_a" href="https://github.com/keylan1/flixApp"><button class="project-button">Project
+                on
+                GitHub</button></a>
+          </div>
         </div>
         <div class="grid__item">
-          <img src="./img/Pokemon.png" alt="pokedex image" class="pokedex-img work-section-img">
-          <p>
-            The PokeDex Web Application is a simple web app I built using HTML, CSS, and JavaScript. It connects to
-            the PokeAPI to provide users with an accessible and user-friendly list of Pokémon. Users can search for
-            Pokémon by name and view detailed information. The app showcases my front-end development skills.
-          </p>
-          <a href="https://github.com/keylan1/simple-js-app">See project on GitHub</a>
-          <br>
-          <a href="https://keylan1.github.io/simple-js-app/">Hosted version</a>
+          <div class="grid__item-img">
+            <img src="./img/Pokemon.svg" alt="pokedex image" class="pokedex-img work-section-img">
+          </div>
+          <div class="grid__item-text">
+            <p class="grid__item_p">
+              The PokeDex Web Application is a simple web app I built using HTML, CSS, and JavaScript. It connects to
+              the PokeAPI to provide users with an accessible and user-friendly list of Pokémon. Users can search for
+              Pokémon by name and view detailed information. The app showcases my front-end development skills.
+            </p>
+          </div>
+          <div class="button-container">
+            <a class="grid__item_a" href="https://github.com/keylan1/simple-js-app"><button
+                class="project-button">Project
+                on GitHub</button></a>
+            <a class="grid__item_a" href="https://keylan1.github.io/simple-js-app/"><button
+                class="project-button">Hosted
+                version</button></a>
+          </div>
         </div>
       </div>
     </div>
@@ -122,11 +176,10 @@
     <!-- <a href="mailto:sarah29.84@gmail.com?cc=smaugkeller@gmail.com">Contact me</a>-->
     <p>Find me on</p>
     <div class="social-media">
-      <a href="https://github.com/keylan1">
-        <img src="img/github_icon.svg" alt="Github icon" />
-      </a>
-      <!--<img src="img/twitter_icon.svg" alt="Twitter icon" />-->
-      <a href="https://www.linkedin.com/in/sarah-keller-77b59525/">
+      <a class="footer__icon" href="https://github.com/keylan1">
+        <img src="img/github_icon.svg"
+          alt="Github icon" /></a><!--<img src="img/twitter_icon.svg" alt="Twitter icon" />-->
+      <a class="footer__icon" href="https://www.linkedin.com/in/sarah-keller-77b59525/">
         <img src="img/linkedin_icon.svg" alt="LinkedIn icon" />
       </a>
     </div>
