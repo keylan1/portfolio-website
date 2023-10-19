@@ -163,15 +163,170 @@ footer {
   justify-content: center;
 }
 
+.about-container {
+  margin: auto;
+  text-align: justify;
+}
+
 .main__about--text {
-  margin-top: 40px;
-  margin-bottom: 25px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 /*svg {
   margin-top: 10px;
   margin-bottom: 10px;
 }*/
+
+/* Case Study section */
+/* Stage 1: Server-Side Development Section */
+
+
+.main-casestudy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cs-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 65vw;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.cs-overview,
+.cs-purpose,
+.cs-objective,
+.cs-duration,
+.cs-tools,
+.cs-credits,
+.cs-server,
+.cs-client,
+.cs-end,
+.cs-results,
+.cs-challenges,
+.cs-future,
+.cs-retrospective {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.cs-end {
+  text-align: justify;
+}
+
+
+
+.table-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  /* Adjust the top margin as needed */
+}
+
+.table-container table {
+  border-spacing: 10px;
+  /* Adjust the spacing between cells as needed */
+  border-collapse: separate;
+}
+
+.cs-server {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px;
+  /* Adjust as needed for spacing between sections */
+
+}
+
+.restful {
+  margin-top: 15px;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.database {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.overview-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.credits-list {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-top: 5px;
+}
+
+.cs-server img.postman {
+  margin-left: 20px;
+  /* Adjust as needed for spacing between image and text */
+}
+
+/* Stage 1: User Authentication Section */
+.cs-server img.jwt {
+  float: left;
+  /* Float to the left */
+  margin-right: 20px;
+  /* Adjust as needed for spacing between image and text */
+}
+
+.authen {
+  text-align: justify;
+}
+
+/* Stage 2: Client-Side Development Section */
+.cs-client {
+  margin: 30px;
+  /* Adjust as needed for spacing between sections */
+  overflow: hidden;
+  /* Clear the float from the images */
+  text-align: justify;
+}
+
+.clientside {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.cs-client img {
+  max-width: 40%;
+  /* Adjust as needed for image width */
+  height: auto;
+}
+
+.cs-client img.reactmobile {
+  float: right;
+  /* Float to the right */
+  margin-left: 20px;
+  /* Adjust as needed for spacing between image and text */
+  margin-top: -60px;
+  margin-bottom: 30px;
+}
+
+/* Centered images */
+
+.cs-angular {
+  margin-top: 50px;
+}
+
+.centered {
+  margin-top: -40px;
+}
 
 .main-work {
   display: flex;

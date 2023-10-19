@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="img/favicon-32x32.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+  <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  <!--<link rel="stylesheet" type="text/css" href="css/style.production.css" />-->
+  <title>Case Study SKeller</title>
+</head>
+
+<body>
+  <!--HEADER SECTION-->
+  <header class="page-header">
+    <a href="./index.html">
+      <img src="img/sklogo2.svg" alt="S Keller personal logo of name in text with leaf branch" /></a>
+    <nav class="page-header__item">
+      <!--ARIA accessibility with roles-->
+      <ul role="menubar" class="navigation-list">
+        <li role="presentation">
+          <a href="index.html" role="menuitem" class="navigation-list__item">Home
+          </a>
+        </li>
+        <li role="presentation">
+          <a href="about.html" role="menuitem" class="navigation-list__item navigation-list__item">About</a>
+        </li>
+        <li role="presentation">
+          <a href="work.html" role="menuitem" class="navigation-list__item">Projects</a>
+        </li>
+        <li role="presentation">
+          <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <!--MAIN SECTION-->
+  <main>
+    <h1>Case Study mFlixApp</h1>
+    <div class="main-casestudy">
+      <!-- Hero Image, centered -->
+      <img src="./img/react.png" alt="Hero Image" style="display: block; margin: auto; width: 50%">
+      <div class="cs-container">
+        <!-- Overview Section -->
+        <div class="cs-overview">
+          <h2>Overview</h2>
+          <p>The mFlixApp, is a movie app built utilizing the MERN stack. This project aimed to demonstrate proficiency
+            in
+            both server-side and client-side technologies, providing users with the ability to:</p>
+          <div class="overview-list">
+            <ul>
+              <li>Browse a collection of movies with detailed information</li>
+              <li>View movie details, including title, description, genre, director, actors, and release year</li>
+              <li>Add movies to their list of favorites</li>
+              <li>Manage their profile</li>
+            </ul>
+          </div>
+        </div>
+        <!-- Purpose and Context Section -->
+        <div class="cs-purpose">
+          <h2>Purpose and Context</h2>
+          <p>This endeavor, an integral part of my CareerFoundry full-stack web development course, provided a hands-on
+            opportunity to apply theoretical knowledge in a practical context.</p>
+        </div>
+
+        <!-- Objective Section -->
+        <div class="cs-objective">
+          <h2>Objective</h2>
+          <p>My goal was to construct a responsive movie app from start to finish, featuring advanced functionalities
+            such
+            as search, user authentication, and management.</p>
+        </div>
+
+        <!-- Duration Section -->
+        <div class="cs-duration">
+          <h2>Duration</h2>
+          <p>3 weeks server-side and 5 weeks client-side (8 weeks total)</p>
+        </div>
+
+        <!-- Tools Section -->
+        <div class="cs-tools">
+          <!--TABLE-->
+          <h2>Tools</h2>
+          <div class="table-container">
+            <table>
+              <thead>
+                <tr>
+                  <th scope="col"></th>
+                  <th scope="col"></th>
+                  <th scope="col">Links</th>
+                  <!--<th scope="col">Level of Expertise</th>-->
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Back-end</th>
+                  <td>Node.js (Express, Morgan, mongoose, Passport, bcrypt), MongoDB, Postman, Heroku, JSDoc</td>
+                  <td><a href="https://github.com/keylan1/flixApp/" target="_blank">GitHub</a></td>
+                </tr>
+                <tr>
+                  <th scope="row">Front-end</th>
+                  <td>JS, React, React Bootstrap, Parcel, PropTypes, Netlify </td>
+                  <td><a href="https://github.com/keylan1/flixApp-client" target="_blank">GitHub</a>,
+                    <a href="https://mflixapp.netlify.app" target="_blank">Hosted</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Credits & Role Section -->
+        <div class="cs-credits">
+          <h2>Credits & Role</h2>
+          <div class="credits-list">
+            <ul>
+              <li>Lead dev: Sarah Keller</li>
+              <li>Tutor: Ahmed Mahfoudh</li>
+              <li>Mentor: Stephen Barungi</li>
+              <li>GitHub repos</li>
+              <li>Google</li>
+              <li>ChatGPT</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Stage 1: Server-Side Development Section -->
+        <div class="cs-server">
+          <div>
+            <h2 style="text-align: center; align-content: center;">Stage 1: Server-Side Development</h2>
+            <div class="database">
+              <img src="./img/mongodb.png" alt="Database Image" style="width: 50%; height: auto">
+            </div>
+          </div>
+          <div class="restful">
+            <h3>RESTful API</h3>
+            <img class="postman" src="./img/postman.png" alt="Postman Testing Image"
+              style="float: right; max-width: 50%; height: auto;">
+            <p>The focus of this phase was establishing the backbone of the mFlixApp. It involved the creation of a
+              RESTful
+              API via Node.js and Express, employing a non-relational database, MongoDB, and employing the Mongoose
+              library
+              for the collection schemas. HTTP endpoints were defined to access the ‘movies’ and ‘users’ collections for
+              CRUD
+              operations such as returning user info, updating user info, returning the movies list. The endpoints were
+              tested
+              with Postman.</p>
+          </div>
+          <div class="authen">
+            <h3>User Authentication</h3>
+            <img class="jwt" src="./img/jwt.png" alt="JWT Code Image" style="float: left; width: 50%; height: auto;">
+            <p>In order to ensure that no unauthorized CRUD operations could be performed, JWT authentication was
+              employed
+              to
+              require users to sign in and sign up. Password hashing was also implemented to ensure that the user’s
+              password
+              could not be read even by the database manager.</p>
+          </div>
+        </div>
+
+        <!-- Stage 2: Client-Side Development -->
+        <div class="cs-client">
+          <div>
+            <h2 style="text-align: center;">Stage 2: Client-Side Development</h2>
+          </div>
+          <div class="clientside">
+            <img class="reactmobile" src="./img/reactmobile.jpg" alt="Client-Side Image"
+              style="float: right; margin-left: 20px; width: 25%; height: auto;">
+            <p>Following the completion of the backend, the emphasis shifted to creating the client-side of a responsive
+              movie
+              app using React. Using the database and endpoints, I implemented views such as the registration and
+              sign-up
+              page, user profile with info, favorite movies, ability to edit the profile, and the main page with the
+              movies. A
+              user has the ability to click on a movie for a dialog with more detailed information on the movie, genre,
+              date
+              and director. A button also allows the user to favorite or unfavorite the movie.
+
+              For the visual aspects, the UI library React Bootstrap was used. This enabled a more structured and
+              uniform
+              manipulation of the visuals.
+            </p>
+          </div>
+          <div class="cs-angular">
+            <h4>Additional Angular Front-end</h4>
+            <p>Later in the course, the client-side was also built with Angular and Angular Material (see image below),
+              which
+              can be seen on the projects page</p>
+            <div>
+              <img class="centered" src="./img/angular.png" alt="Angular Image"
+                style="align-self: center; max-width: 72%; height: auto; margin-top: 20px;">
+            </div>
+          </div>
+        </div>
+
+        <!-- Results and Conclusions Section -->
+        <div class="cs-end">
+          <div class="cs-results">
+            <h2>Results and Conclusions:</h2>
+            <p>The mFlixApp stands as a testament to my learning in both backend and frontend technologies, providing a
+              responsive, feature-rich movie app with user authentication and management capabilities.</p>
+          </div>
+
+          <!-- Challenges and Learnings Section -->
+          <div class="cs-challenges">
+            <h2>Challenges and Learnings:</h2>
+            <p>The server-side creation appeared more straightforward, though I found experimentation with relational
+              databases frustrating and enlightening as it demonstrated that a large amount of the work is done in the
+              planning as changing things becomes complicated. The authentication process created the most issues and
+              took
+              some time to follow properly.
+
+              Regarding the client-side, challenges were encountered in managing prop dependencies in React, extending
+              the
+              duration of this task beyond the usual and highlights the learning curve associated with React. A literal
+              application of console.log(), alerts and error messages were vital in determining what information was
+              being
+              passed. While the modularity of React is quite impressive, the seeming lack of structure posed the
+              greatest
+              frustration. Implementing the profile functionalities was the most frustrating as following the thread
+              became
+              more complicated with the prop dependencies. Experimentation with codebases and external assistance played
+              a
+              crucial role in overcoming these challenges.
+            </p>
+          </div>
+          <!-- Future Steps Section -->
+          <div class="cs-future">
+            <h2>Future Steps</h2>
+            <p>Looking ahead, I aim to deepen my knowledge of React and debugging to improve efficacy, code and to
+              enhancing
+              the client-side functionality via features such as a skeleton loader. My design is quite basic and could
+              stand
+              to be improved. Additionally, I’d like to add Redux for state management to organize that more. Overall,
+              it
+              cemented the notion that in future, in times of frustration, taking a step back and turning focus on
+              gaining
+              a
+              deeper understanding of the material is crucial.</p>
+          </div>
+          <!-- Project Retrospective Section -->
+          <div class="cs-retrospective">
+            <h2>Project Retrospective</h2>
+            <p>Reflecting on the project, I found satisfaction in backend development, the magic of executing commands
+              in
+              the
+              terminal, and building a complete product. Appreciation goes to my tutor and mentor for their invaluable
+              support.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!--FOOTER SECTION-->
+  <footer class="page-footer">
+    <!-- <a href="mailto:sarah29.84@gmail.com?cc=smaugkeller@gmail.com">Contact me</a>-->
+    <p>Find me on</p>
+    <div class="social-media">
+      <a class="footer__icon" href="https://github.com/keylan1">
+        <img src="img/github_icon.svg"
+          alt="Github icon" /></a><!--<img src="img/twitter_icon.svg" alt="Twitter icon" />-->
+      <a class="footer__icon" href="https://www.linkedin.com/in/sarah-keller-77b59525/">
+        <img src="img/linkedin_icon.svg" alt="LinkedIn icon" />
+      </a>
+    </div>
+    <div>
+      <a href="impressum.html" role="menuitem" class="impressum-link">Impressum</a>
+    </div>
+  </footer>
+  <!--js source for accessibility checker-->
+  <script src="js/tota11y.min.js"></script>
+</body>
+
+</html>
