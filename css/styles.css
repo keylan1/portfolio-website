@@ -434,6 +434,11 @@ button:focus,
   padding: 10px;
 }
 
+.impressum-link {
+  color: black;
+  padding-bottom: 10px;
+}
+
 /* RESPONSIVENESS */
 /* GRID */
 
